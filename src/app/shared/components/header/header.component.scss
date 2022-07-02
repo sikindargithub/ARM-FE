@@ -1,6 +1,17 @@
+@use '@angular/material' as mat;
 @import 'src/scss/variables';
 
+
 mat-toolbar {
+  font-size: $body-font-size;
+  height: auto;
   background: $white;
-  border-bottom: $border;
+  border-bottom: $border;  
+  .spacer {
+    flex: 1;
+  }
+  .mat-icon-button {
+    background: transparent;
+  }
 }
+

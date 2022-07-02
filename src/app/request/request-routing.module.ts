@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { Role } from '../models/role';
 import { AuthGuard } from '../user/auth.guard';
+import { CreateRequestComponent } from './components/create-request/create-request.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
       roles: [Role.USER]
     },
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'create',
+    component: CreateRequestComponent
   }
 ];
 

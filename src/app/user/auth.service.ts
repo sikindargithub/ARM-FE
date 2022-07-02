@@ -28,8 +28,10 @@ export class AuthService {
     return this.keycloakService.loadUserProfile();
   }
 
-  public login(): void {
-    this.keycloakService.login();
+  public login(redirectUri?:string): Promise<void> {
+    return this.keycloakService.login({
+      redirectUri
+    });
   }
 
   public logout(): void {

@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { initializer } from './keycloak-initializer';
 
-import { UserRoutingModule } from './user-routing.module';
 import { LoginComponent } from './components/login/login.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
@@ -12,7 +11,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     SharedModule,
-    UserRoutingModule,
     KeycloakAngularModule
   ],
   providers: [
