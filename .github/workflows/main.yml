@@ -2,7 +2,6 @@ name: Project CI
 on:
   pull_request:
     branches: [master]
-  push:
 jobs:
   ci:
     runs-on: ubuntu-latest
