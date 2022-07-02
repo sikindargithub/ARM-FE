@@ -7,7 +7,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 @NgModule({
-  declarations: [LayoutComponent, NavbarComponent, HeaderComponent, DropdownComponent],
+  declarations: [
+    LayoutComponent,
+    NavbarComponent,
+    HeaderComponent,
+    DropdownComponent
+  ],
   imports: [CommonModule, MatToolbarModule],
   exports: [LayoutComponent, HeaderComponent]
 })
