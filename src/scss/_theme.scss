@@ -19,13 +19,15 @@ $audit-request-management-accent: mat.define-palette($md-accent-pallette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$audit-request-management-theme: mat.define-light-theme((
-  color: (
-    primary: $audit-request-management-primary,
-    accent: $audit-request-management-accent,
-    // warn: $audit-request-management-warn,
+$audit-request-management-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $audit-request-management-primary,
+      accent: $audit-request-management-accent,
+      // warn: $audit-request-management-warn,
+    )
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component

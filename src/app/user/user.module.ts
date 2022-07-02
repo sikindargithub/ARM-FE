@@ -6,13 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
-  declarations: [
-    LoginComponent
-  ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    UserRoutingModule
-  ]
+  declarations: [LoginComponent],
+  imports: [CommonModule, SharedModule, UserRoutingModule]
 })
-export class UserModule { }
+export class UserModule {}

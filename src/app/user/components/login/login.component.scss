@@ -1,13 +1,13 @@
 @import 'src/scss/variables';
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-main{
-    flex: 1;
-    display: flex;
-    border-bottom: $border;
+main {
+  flex: 1;
+  display: flex;
+  border-bottom: $border;
 }

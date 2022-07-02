@@ -1,19 +1,18 @@
 @import 'src/scss/variables';
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 main {
-    flex: 1;
-    display: flex;
-    border-bottom: $border;
-    app-navbar {
-        width: 10%;
-        max-width: 100px;
-        border-right: $border;
-    }    
-    
+  flex: 1;
+  display: flex;
+  border-bottom: $border;
+  app-navbar {
+    width: 10%;
+    max-width: 100px;
+    border-right: $border;
+  }
 }

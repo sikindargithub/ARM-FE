@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-request.component.scss']
 })
 export class CreateRequestComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+    console.log('inside CreateRequestComponent ngOnInit');
   }
-
 }
