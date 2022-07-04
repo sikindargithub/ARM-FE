@@ -41,3 +41,7 @@ Create a realm `myrealm` and client `myclient` or change accordingly in keycloak
         "source.fixAll.eslint": true 
     },
 ```
+
+## Commit Structure 
+
+    `[JIRA_ID] <Commit Message>`
