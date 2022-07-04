@@ -28,7 +28,7 @@ export class AuthService {
     return this.keycloakService.loadUserProfile();
   }
 
-  public login(redirectUri?:string): Promise<void> {
+  public login(redirectUri?: string): Promise<void> {
     return this.keycloakService.login({
       redirectUri
     });

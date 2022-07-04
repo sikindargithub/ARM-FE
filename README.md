@@ -25,3 +25,19 @@ You can create a Keycloak server in local using the following command
 `docker run -p 7688:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:18.0.2 start-dev`
 
 Create a realm `myrealm` and client `myclient` or change accordingly in keycloak.config.ts file
+
+## Reference Links 
+
+- [Material Palette Generator](http://mcg.mbitson.com/#!?mcgpalette0=%233f51b5)
+- [Keycloak SPA](https://javascript.plainenglish.io/secure-an-angular-single-page-application-with-keycloak-cdbe5026881e)
+- [Keycloak Docker](https://www.keycloak.org/getting-started/getting-started-docker)
+- [Theming](https://material.angular.io/guide/theming-your-components)
+
+## Code Quality 
+1. Install ESLint Extension
+2. Add the following in settings.json
+```
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true 
+    },
+```

@@ -1,4 +1,4 @@
 export enum Role {
   ADMIN = 'admin',
-  USER = 'default-roles-myrealm',
+  USER = 'default-roles-myrealm'
 }

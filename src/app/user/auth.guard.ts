@@ -20,8 +20,7 @@ export class AuthGuard implements CanActivate {
   constructor(
     private keycloakAngular: KeycloakService,
     private auth: AuthService
-  ) {
-  }
+  ) {}
 
   public async canActivate(
     route: ActivatedRouteSnapshot,
