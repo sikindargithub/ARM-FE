@@ -44,4 +44,4 @@ Create a realm `myrealm` and client `myclient` or change accordingly in keycloak
 
 ## Commit Structure 
 
-    `[JIRA_ID] <Commit Message>`
+`[JIRA_ID] <Commit Message>`
