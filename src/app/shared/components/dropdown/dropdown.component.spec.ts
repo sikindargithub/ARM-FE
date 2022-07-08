@@ -1,4 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { DropdownComponent } from './dropdown.component';
 
@@ -8,7 +12,13 @@ describe('DropdownComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DropdownComponent]
+      declarations: [DropdownComponent],
+      imports: [
+        MatFormFieldModule,
+        MatAutocompleteModule,
+        MatInputModule,
+        BrowserAnimationsModule
+      ]
     }).compileComponents();
 
     fixture = TestBed.createComponent(DropdownComponent);

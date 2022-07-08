@@ -1,0 +1,23 @@
+@use '@angular/material' as mat;
+@import 'src/scss/variables';
+
+
+form.dropdown-form {
+  mat-form-field {
+    background-color: mat.get-color-from-palette($md-primary-pallette, 500);
+    border-style: none;
+    height: 3.2rem;
+
+    mat-label {
+      color: $white;
+    }
+
+    mat-option {
+      color: $background-color;
+    }
+  }
+}
+
+.mat-form-field-wrapper {
+  padding-bottom: 100%;
+}
