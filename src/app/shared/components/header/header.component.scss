@@ -13,5 +13,12 @@ mat-toolbar {
   .mat-icon-button {
     background: transparent;
   }
+  .logo {
+    line-height: 0.5rem;
+    img {
+      height: 1.5rem;
+    }
+    
+  }
 }
 
