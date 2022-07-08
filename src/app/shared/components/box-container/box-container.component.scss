@@ -1,0 +1,35 @@
+@import 'src/scss/variables';
+
+.main-container {
+  height: 40rem;
+  border: blue solid 1px;
+  width: 98%;
+}
+
+.outer-container {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card {
+  border-style: solid;
+  border-width: 1px;
+  border-color: $border;
+
+  margin-left: 1.2rem;
+  padding: 0%;
+
+  height: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+
+.inner-div {
+  height: 5rem;
+  width: 100%;
+  background-color: #cdd48b;
+  border-radius: 5px;
+}

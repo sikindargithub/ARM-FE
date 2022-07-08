@@ -7,9 +7,14 @@
 }
 
 main {
+  height: 100%;
   flex: 1;
   display: flex;
   border-bottom: $border;
+  app-box-container {
+    width: 91%;
+    height: 95%;
+  }
   app-navbar {
     width: 10%;
     max-width: 100px;
