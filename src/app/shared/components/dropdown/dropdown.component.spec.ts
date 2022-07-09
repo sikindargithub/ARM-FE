@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { DropdownComponent } from './dropdown.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('DropdownComponent', () => {
   let component: DropdownComponent;
@@ -17,6 +18,7 @@ describe('DropdownComponent', () => {
         MatFormFieldModule,
         MatAutocompleteModule,
         MatInputModule,
+        ReactiveFormsModule,
         BrowserAnimationsModule
       ]
     }).compileComponents();

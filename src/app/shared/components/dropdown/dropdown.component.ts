@@ -1,8 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+// import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
-
 export interface DropdownOption {
   value: string;
   viewValue: string;
@@ -20,14 +20,10 @@ export class DropdownComponent implements OnInit {
     { value: 'tacos-2', viewValue: 'Tacos' }
   ];
 
-  @Input()
-  label:string='';
-
   @Input() parentData: DropdownOption[] = [];
   myControl = new FormControl('');
 
   filteredOptions!: Observable<DropdownOption[]>;
-
   constructor() {}
 
   ngOnInit(): void {
