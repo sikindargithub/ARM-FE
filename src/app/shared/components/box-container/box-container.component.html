@@ -1,3 +1,52 @@
+<!-- <div class="outer-container">
+  <div class="main-container">
+    <h1>Hello</h1>
+    <div>
+    <ng-content></ng-content>
+  </div>
+  <div>
+    <ng-content></ng-content>
+  </div>
+  </div>
+</div> -->
+<!-- <div class="outer-container">
+</div> -->
+
 <mat-card>
-    <div class="inner-div"></div>
+  <div class="inner-div">
+    <button mat-raised-button color="primary">
+      <mat-icon>playlist_add</mat-icon>Create New
+    </button>
+
+    <div class="dropdown-container">
+      <div class="cont">
+        <app-dropdown [parentData]="foods">
+          <mat-label class="status">Status</mat-label>
+        </app-dropdown>
+      </div>
+
+      <div class="cont">
+        <app-dropdown [parentData]="foods">
+          <mat-label class="status">Status</mat-label>
+        </app-dropdown>
+      </div>
+
+      <div class="cont">
+        <app-dropdown [parentData]="foods">
+          <mat-label class="status">Status</mat-label>
+        </app-dropdown>
+      </div>
+
+      <div class="cont">
+        <app-dropdown [parentData]="foods">
+          <mat-label class="status">Status</mat-label>
+        </app-dropdown>
+      </div>
+    </div>
+
+    <div class="input-container">
+      <input class="input-element" matInput type="text" />
+      <mat-icon class="icon">search</mat-icon>
+    </div>
+  </div>
 </mat-card>
