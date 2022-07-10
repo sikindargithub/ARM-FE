@@ -1,18 +1,5 @@
 @import 'src/scss/variables';
 
-.main-container {
-  height: 40rem;
-  border: blue solid 1px;
-  width: 98%;
-}
-
-.outer-container {
-  width: 95vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 mat-card {
   border-style: solid;
   border-width: 1px;
@@ -20,69 +7,15 @@ mat-card {
 
   margin-left: 1.2rem;
   padding: 0%;
-
   height: 100%;
-  //   flex-grow: 1;
-  //   width: 77rem;
-  //   height: 36rem;
-  //   align-self: center;
   margin-top: 5px;
   border-radius: 5px;
-}
-
-// .inner-card {
-//   border: red solid 1px;
-// }
-.container-div {
-  //   border: red solid 1px;
-  //   width: 100%;
-
-  //   //   margin-left: 5px;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: center;
-  //   align-items: center;
-}
-
-.inner-div {
-  height: 5.5rem;
-  width: 100%;
-
-  background-color: #cdd48b;
-  //   border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.cont {
-  margin-left: 0.4rem;
-}
-.dropdown-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.input-element {
-  background-color: $background-color;
-  //   border: solid red 1px;
-  margin-left: 7px;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-  background-color: $background-color;
-  height: 2.5rem;
-  border-radius: 5px;
-}
-
-.icon {
-  margin-right: 0.5rem;
+  mat-card-title{
+      background-color: #cdd48b;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
+  }
 }

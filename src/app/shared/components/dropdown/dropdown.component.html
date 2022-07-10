@@ -1,50 +1,17 @@
-<!-- <mat-form-field appearance="fill" class="fo">
-  <mat-label class="label-element">Favorite food</mat-label>
-  <ng-content select=".status"></ng-content>
-  <mat-select #selc>
-    <mat-option
-      class="option-ele"
-      *ngFor="let data of parentData"
-      [value]="data.value"
-    >
-      {{ data.viewValue }}
-    </mat-option>
-  </mat-select>
-</mat-form-field> -->
 
-<!-- <select class="select-element">
-  <option
-    *ngFor="let data of parentData"
-    class="option-element"
-    value="data.value"
+<input
+  type="text"
+  [placeholder]="label"
+  matInput
+  [formControl]="myControl"
+  [matAutocomplete]="auto"
+/>
+<mat-icon>arrow_drop_down</mat-icon>
+<mat-autocomplete #auto="matAutocomplete">
+  <mat-option
+    *ngFor="let option of filteredOptions | async"
+    [value]="option.viewValue"
   >
-    {{ data.viewValue }}
-  </option>
-</select> -->
-
-<form class="dropdown-form">
-  <mat-form-field class="example-full-width" appearance="fill">
-    <!-- <mat-label>Number</mat-label> -->
-
-    <mat-label>
-      <ng-content></ng-content>
-    </mat-label>
-
-    <input
-      type="text"
-      placeholder="Pick one"
-      aria-label="Number"
-      matInput
-      [formControl]="myControl"
-      [matAutocomplete]="auto"
-    />
-    <mat-autocomplete #auto="matAutocomplete">
-      <mat-option
-        *ngFor="let food of filteredOptions | async"
-        [value]="food.viewValue"
-      >
-        {{ food.viewValue }}
-      </mat-option>
-    </mat-autocomplete>
-  </mat-form-field>
-</form>
+    {{ option.viewValue }}
+  </mat-option>
+</mat-autocomplete>

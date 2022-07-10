@@ -14,6 +14,9 @@ export interface DropdownOption {
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent implements OnInit {
+  @Input()
+  label: string = 'Pick one';
+
   foods: DropdownOption[] = [
     { value: 'steak-0', viewValue: 'Steak' },
     { value: 'pizza-1', viewValue: 'Pizza' },

@@ -1,8 +1,43 @@
 <app-layout>
-  <h2>Dashboard Page</h2>
-  <button>Click me</button>
-  <div class="cont">
-    <app-dropdown [parentData]="foods" label="Status">
-    </app-dropdown>
-  </div>
+  <ng-container header>
+
+      <button mat-raised-button color="primary">
+        <mat-icon>playlist_add</mat-icon>Create New
+      </button>
+  
+      <div class="dropdown-container">
+        <div class="cont">
+          <app-dropdown [parentData]="foods" label="Status">
+          </app-dropdown>
+        </div>
+  
+        <div class="cont">
+          <app-dropdown [parentData]="foods" label="Status">
+          </app-dropdown>
+        </div>
+  
+        <div class="cont">
+          <app-dropdown [parentData]="foods" label="Status">
+          </app-dropdown>
+        </div>
+  
+        <div class="cont">
+          <app-dropdown [parentData]="foods" label="Status">
+          </app-dropdown>
+        </div>
+      </div>
+  
+      <div class="input-container">
+        <input class="input-element" matInput type="text" />
+        <mat-icon class="icon">search</mat-icon>
+      </div>
+  </ng-container>
+  <ng-container>
+    
+    <button>Click me</button>
+    <div class="cont">
+      <app-dropdown [parentData]="foods" label="Status">
+      </app-dropdown>
+    </div>
+  </ng-container>
 </app-layout>

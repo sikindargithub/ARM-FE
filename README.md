@@ -32,6 +32,7 @@ Create a realm `myrealm` and client `myclient` or change accordingly in keycloak
 - [Keycloak SPA](https://javascript.plainenglish.io/secure-an-angular-single-page-application-with-keycloak-cdbe5026881e)
 - [Keycloak Docker](https://www.keycloak.org/getting-started/getting-started-docker)
 - [Theming](https://material.angular.io/guide/theming-your-components)
+- [Icon List](https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/)
 
 ## Code Quality 
 1. Install ESLint Extension

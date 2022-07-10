@@ -3,7 +3,13 @@
   <main>
     <app-navbar></app-navbar>
     <app-box-container>
-      <ng-content></ng-content>
+      <ng-container header>
+        <ng-content select="[header]"></ng-content>
+      </ng-container>
+      <ng-container>
+        <ng-content></ng-content>
+      </ng-container>
+      
     </app-box-container>
   </main>
   <footer>Copyrights&copy; Acheron 2022.</footer>

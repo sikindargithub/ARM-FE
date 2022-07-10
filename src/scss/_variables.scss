@@ -66,7 +66,10 @@ $md-accent-pallette: (
 );
 
 $white: #ffffff;
-$border: 1px solid mat.get-color-from-palette($md-accent-pallette, 500);
+$gray: mat.get-color-from-palette($md-accent-pallette, 500);
+$border: 1px solid $gray;
+$black: #000000;
+$text-color: $black;
 $typography-config: mat.define-typography-config();
 $body-font-size: mat.font-size($typography-config, 'caption');
 $padding: $body-font-size;
