@@ -1,4 +1,9 @@
-import { NgModule } from '@angular/core';
+import { RequestListComponent } from './../request/components/request-list/request-list.component';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  NO_ERRORS_SCHEMA
+} from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { BoxContainerComponent } from './components/box-container/box-container.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -29,12 +35,21 @@ import { BoxContainerComponent } from './components/box-container/box-container.
     MatAutocompleteModule,
     MatCardModule,
     MatToolbarModule,
+    MatTableModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
     MatButtonModule,
     RouterModule.forChild([])
   ],
-  exports: [LayoutComponent, HeaderComponent, DropdownComponent, BoxContainerComponent]
+  exports: [
+    LayoutComponent,
+    HeaderComponent,
+    DropdownComponent,
+    MatTableModule,
+    MatIconModule,
+    BoxContainerComponent
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class SharedModule {}

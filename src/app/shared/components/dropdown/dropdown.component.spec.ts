@@ -1,11 +1,11 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
-
 import { DropdownComponent } from './dropdown.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 describe('DropdownComponent', () => {
   let component: DropdownComponent;
@@ -16,9 +16,11 @@ describe('DropdownComponent', () => {
       declarations: [DropdownComponent],
       imports: [
         MatFormFieldModule,
+        FormsModule,
         MatAutocompleteModule,
         MatInputModule,
         ReactiveFormsModule,
+        HttpClientModule,
         BrowserAnimationsModule
       ]
     }).compileComponents();

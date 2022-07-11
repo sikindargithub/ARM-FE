@@ -1,3 +1,4 @@
+import { LayoutComponent } from './../../../shared/components/layout/layout.component';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CreateRequestComponent } from './create-request.component';
@@ -8,7 +9,7 @@ describe('CreateRequestComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CreateRequestComponent]
+      declarations: [CreateRequestComponent, LayoutComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(CreateRequestComponent);

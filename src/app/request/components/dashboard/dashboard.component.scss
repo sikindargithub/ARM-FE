@@ -8,8 +8,6 @@ h2 {
   color: red;
 }
 
-
-
 .dropdown-container {
   display: flex;
   flex-direction: row;
@@ -19,7 +17,6 @@ h2 {
 
 .input-element {
   background-color: $background-color;
-  //   border: solid red 1px;
   margin-left: 7px;
 }
 
@@ -28,7 +25,6 @@ h2 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
   background-color: $background-color;
   height: 2.5rem;
   border-radius: 5px;
@@ -36,4 +32,17 @@ h2 {
 
 .icon {
   margin-right: 0.5rem;
+}
+
+app-box-container {
+  width: 100%;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+app-request-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  height: 100%;
 }
