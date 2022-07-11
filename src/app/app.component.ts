@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   constructor(private auth: AuthService) {}
 
   async ngOnInit(): Promise<void> {
+    //Getting user details
     this.loggedIn = await this.auth.isLoggedIn();
     if (this.loggedIn) {
       this.userProfile = await this.auth.loadUserProfile();
