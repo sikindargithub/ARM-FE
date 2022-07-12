@@ -21,6 +21,18 @@ import { MatInputModule } from '@angular/material/input';
 import { BoxContainerComponent } from './components/box-container/box-container.component';
 import { MatTableModule } from '@angular/material/table';
 
+const materialModules = [
+  ReactiveFormsModule,
+  MatAutocompleteModule,
+  MatCardModule,
+  MatToolbarModule,
+  MatTableModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatButtonModule
+];
+
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -29,19 +41,7 @@ import { MatTableModule } from '@angular/material/table';
     DropdownComponent,
     BoxContainerComponent
   ],
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    MatAutocompleteModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatTableModule,
-    MatFormFieldModule,
-    MatIconModule,
-    MatInputModule,
-    MatButtonModule,
-    RouterModule.forChild([])
-  ],
+  imports: [CommonModule, materialModules, RouterModule.forChild([])],
   exports: [
     LayoutComponent,
     HeaderComponent,

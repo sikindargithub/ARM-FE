@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { RequestView } from 'src/app/models/requestView';
 
 @Component({
   selector: 'app-request-list',
